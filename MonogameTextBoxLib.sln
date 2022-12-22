@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonogameTextBoxLib", "MonogameTextBoxLib\MonogameTextBoxLib.csproj", "{02CA9117-D3E0-4D89-A888-D4425BC4CDF9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormElementsLib", "..\FormElementsLib\FormElementsLib\FormElementsLib.csproj", "{85DF21C3-4137-49BB-85A1-99BDD162E636}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{02CA9117-D3E0-4D89-A888-D4425BC4CDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02CA9117-D3E0-4D89-A888-D4425BC4CDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02CA9117-D3E0-4D89-A888-D4425BC4CDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DF21C3-4137-49BB-85A1-99BDD162E636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DF21C3-4137-49BB-85A1-99BDD162E636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DF21C3-4137-49BB-85A1-99BDD162E636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DF21C3-4137-49BB-85A1-99BDD162E636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
