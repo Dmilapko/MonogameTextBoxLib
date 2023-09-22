@@ -9,6 +9,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\FormElementsLib\FormElementsLib\FormElementsLib.csproj" />
-    <ProjectReference Include="..\..\MonoHelper\MonoHelper\MonoHelper.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoHelper">
+      <HintPath>..\..\MonoHelper\bin\Release\netcoreapp3.1\MonoHelper.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
