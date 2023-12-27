@@ -211,7 +211,7 @@ namespace MonogameTextBoxLib
         {
             pkeytimer.Stop();
             pkeytimer.Start();
-            pkeytimer.Interval = 200;
+            pkeytimer.Interval = 100;
             pkeytimer.Elapsed += Pkeytimer_Elapsed;
             pkey = str;
             pkeytimer.Enabled = true;
@@ -222,6 +222,47 @@ namespace MonogameTextBoxLib
         {
             pkeytimer.Enabled = false;
             pkey = "no";
+        }
+
+        public Action changecolor_action;
+        public Action changecolor_actionfinally;
+
+
+
+        public void MakeAction()
+        {
+            try
+            {
+                changecolor_action();
+                textcolor = Color.Black;
+            }
+            catch (Exception)
+            {
+                textcolor = Color.Red;
+            }
+            finally 
+            {
+                if (changecolor_actionfinally != null) changecolor_actionfinally();
+            }
+        }
+
+        public bool MakeAction(Action _changecolor_action, Action _changecolor_actionfinally)
+        {
+            try
+            {
+                _changecolor_action();
+                textcolor = Color.Black;
+                return true;
+            }
+            catch (Exception)
+            {
+                textcolor = Color.Red;
+                return false;
+            }
+            finally
+            {
+                if (changecolor_actionfinally != null) _changecolor_actionfinally();
+            }
         }
 
         public bool TryConvertKeyboardInput(KeyboardState keyboard, ref char key)
